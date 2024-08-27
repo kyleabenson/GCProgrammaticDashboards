@@ -36,7 +36,7 @@ resource "google_monitoring_dashboard" "dashboard" {
           widget = {
             title = "Text Widget"
             text = {
-              content = locals.owner
+              content = local.owner
               format = "MARKDOWN"
               style = {
                 backgroundColor = "#FFFFFF"
